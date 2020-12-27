@@ -19,9 +19,9 @@ class _AddMovieState extends State<AddMovie> {
   File _image;   
   
     String _title,_description,_photo,_time;
-    bool _c1,_c2 ,_c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14, _c15, _c16, _c17, _c18 , _c19 , _c20, 
-    _c21, _c22, _c23, _c24, _c25, _c26, _c27, _c28, _c29, _c30, _c31, _c32, _c33, _c34, _c35, _c36, _c37, _c38, _c39, _c40,
-    _c41, _c42, _c43, _c44, _c45, _c46, _c47;
+    bool _c1=false,_c2 =false ,_c3 =false,  _c4 =false, _c5 =false , _c6 =false , _c7= false, _c8 =false, _c9 =false, _c10 = false, _c11 =false, _c12 =false, _c13 =false, _c14 =false, _c15 =false, _c16 =false, _c17 =false, _c18= false , _c19 =false , _c20 =false, 
+    _c21= false, _c22=false, _c23 =false, _c24 =false, _c25 =false, _c26 =false, _c27 =false, _c28 =false, _c29 =false, _c30=false, _c31 =false, _c32 =false, _c33 =false, _c34 =false, _c35 =false, _c36 =false, _c37 =false, _c38 =false, _c39 =false, _c40 =false,
+    _c41 =false, _c42=false, _c43 =false, _c44=false, _c45=false, _c46=false, _c47=false;
   Future getImageFromCam() async{
     var image = await ImagePicker.pickImage(source: ImageSource.camera);
     setState(() {
