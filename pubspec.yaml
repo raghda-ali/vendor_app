@@ -28,7 +28,8 @@ dependencies:
     sdk: flutter
   image_picker: ^0.6.7+17
   path: ^1.7.0
-
+  firebase_messaging: ^7.0.3
+ 
   
 
 

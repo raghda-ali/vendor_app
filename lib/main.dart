@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'firebase_screen.dart';
 import 'Screens/addmovie.dart';
 import 'Screens/Home.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -19,7 +20,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-    home: Home(),
+      home: Scaffold(
+        body: Firebase_Messaging(),
+      
+    ),
     routes: {
       AddMovie.id : (context)=>AddMovie(),
     },
