@@ -183,11 +183,12 @@ class BuyTicket extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   // First Seat Row
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                  Wrap(
+                   // mainAxisAlignment: MainAxisAlignment.center,
+
                     children: <Widget>[
                       SizedBox(
-                        width: (MediaQuery.of(context).size.width / 20),
+                        width: (MediaQuery.of(context).size.width / 50),
                       ),
                       CienmaSeat(
                         isReserved: movie.c1 ,
@@ -210,7 +211,7 @@ class BuyTicket extends StatelessWidget {
                       ),
 
                       SizedBox(
-                        width: (MediaQuery.of(context).size.width / 20) * 2,
+                        width: (MediaQuery.of(context).size.width / 50) * 2,
                       ),
                       CienmaSeat(
                         isReserved: movie.c5 ,
@@ -236,13 +237,13 @@ class BuyTicket extends StatelessWidget {
                           isSelected: false,
                           val:'9'),
                       SizedBox(
-                        width: (MediaQuery.of(context).size.width / 20),
+                        width: (MediaQuery.of(context).size.width / 50),
                       ),
                     ],
                   ),
                   // Second Row
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                  Wrap(
+                   // mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       CienmaSeat(
                           isReserved: movie.c10 ,
@@ -261,7 +262,7 @@ class BuyTicket extends StatelessWidget {
                           isSelected: false,
                           val:'13'),
                       SizedBox(
-                        width: (MediaQuery.of(context).size.width / 20) * 2,
+                        width: (MediaQuery.of(context).size.width / 50) * 2,
                       ),
                       CienmaSeat(
                           isReserved: movie.c14 ,
@@ -286,8 +287,8 @@ class BuyTicket extends StatelessWidget {
                     ],
                   ),
                   // Third  Row
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                  Wrap(
+                   // mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       CienmaSeat(
                           isReserved: movie.c19 ,
@@ -306,7 +307,7 @@ class BuyTicket extends StatelessWidget {
                           isSelected: false,
                           val:'22'),
                       SizedBox(
-                        width: (MediaQuery.of(context).size.width / 20) * 2,
+                        width: (MediaQuery.of(context).size.width / 50) * 2,
                       ),
                       CienmaSeat(
                           isReserved: movie.c23,
@@ -332,8 +333,8 @@ class BuyTicket extends StatelessWidget {
                     ],
                   ),
                   // 4TH Row
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                  Wrap(
+                 //   mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       CienmaSeat(
                           isReserved: movie.c28,
@@ -352,7 +353,7 @@ class BuyTicket extends StatelessWidget {
                           isSelected: false,
                           val:'31'),
                       SizedBox(
-                        width: (MediaQuery.of(context).size.width / 20) * 2,
+                        width: (MediaQuery.of(context).size.width / 50) * 2,
                       ),
                       CienmaSeat(
                           isReserved: movie.c32,
@@ -381,11 +382,11 @@ class BuyTicket extends StatelessWidget {
                  
                   // 6TH Row
                   // final Row
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                  Wrap(
+                //    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       SizedBox(
-                        width: (MediaQuery.of(context).size.width / 20),
+                        width: (MediaQuery.of(context).size.width / 50),
                       ),
                       CienmaSeat(
                           isReserved: movie.c37,
@@ -403,13 +404,16 @@ class BuyTicket extends StatelessWidget {
                           isReserved: movie.c40,
                           isSelected: false,
                           val:'40'),
+                      SizedBox(
+                        width: (MediaQuery.of(context).size.width / 50) * 2,
+                      ),
                       CienmaSeat(
                           isReserved: movie.c41,
                           isSelected: false,
                           val:'41'),
 
-                      SizedBox(
-                      ),
+                    //  SizedBox(
+                    //  ),
                       CienmaSeat(
                           isReserved: movie.c44,
                           isSelected: false,
@@ -426,17 +430,21 @@ class BuyTicket extends StatelessWidget {
                           isReserved: movie.c45,
                           isSelected: false,
                           val:'45'),
+                      SizedBox(
+                        width: (MediaQuery.of(context).size.width / 100) * 2,
+                      ),
                       CienmaSeat(
                           isReserved: movie.c46,
                           isSelected: false,
                           val:'46'),
+
                       CienmaSeat(
                           isReserved: movie.c47,
                           isSelected: false,
                           val:'47'),
 
                       SizedBox(
-                        width: (MediaQuery.of(context).size.width / 20),
+                        width: (MediaQuery.of(context).size.width / 50),
                       ),
                     ],
                   ),
