@@ -5,6 +5,10 @@ class Store
 {
   // ignore: deprecated_member_use
   final FirebaseFirestore _firestore = Firestore.instance;
+
+  deleteMovie(documentId){
+    _firestore.collection('Movies').doc(documentId).delete();
+  }
   addMovie(Movie movie)
   {
     _firestore.collection('Movies').add(
