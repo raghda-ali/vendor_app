@@ -13,6 +13,8 @@ import 'package:flutter/rendering.dart';
 import 'package:vendor_app/screens/MovieDetails.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 
+import '../constance.dart';
+
 //import '../constance.dart';
 
 class Home extends StatefulWidget {
@@ -107,7 +109,7 @@ backgroundColor: Colors.red[400],
               for (var doc in snapshot.data.documents) {
                 var data = doc.data();
                 movies.add(Movie(
-                 // documentid : doc.id,
+                 documentid :doc.id ,
                   mTitle: data['MovieTitle'],
                   mDescription: data['MovieDescription'],
                   mImage: data['MovieImage'],
@@ -172,10 +174,12 @@ backgroundColor: Colors.red[400],
                   padding:EdgeInsets.symmetric(horizontal : 30, vertical :30) ,
                   child: Stack(
                     children: <Widget>[
+                      
                       Positioned.fill(
                        // child:GestureDetector(
 
                         //  onTap:(){Navigator.pushNamed(context, MovieDetails.id , arguments: movies[index]);} ,
+                        
                       child:RaisedButton(
                       onPressed:(){Navigator.pushNamed(context, MovieDetails.id , arguments: movies[index]);} ,
 
@@ -185,8 +189,34 @@ backgroundColor: Colors.red[400],
                             )
                         ),
                       ),
+                      Column(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: <Widget>[
+                                       RaisedButton(
+                        child : Text("Delete"),
+                              color: Colors.red[400],
+                              textColor: Colors.white,
+                              onPressed:(){
+                                Scaffold.of(context)
+                                              .showSnackBar(SnackBar(backgroundColor: Colors.red[400],
+                                            content: Text(
+                                                'Sure you want to delete this Movie?!'),
+                                            action: SnackBarAction(
+                                              label: 'Delete',
+                                              textColor: Colors.white,
+                                              onPressed: () {
+                                               _store.deleteMovie(movies[index].documentid);
+                                                // Some code to undo the change.
+                                              },
+                                            ),
+                                          ));
+                                //_store.deleteMovie(movies[index].documentid);
+                              }
+                      ),           
+                                  ],
+                                ),        
                       Positioned(
-                        bottom: 0,
+                        bottom: 40,
                         child: Opacity(
                           opacity: .6,
                           child: Container(
@@ -201,6 +231,7 @@ backgroundColor: Colors.red[400],
                                 //Text(movies[index].mDescription,
                                 //   style : TextStyle(fontWeight: FontWeight.bold)
                                 // )
+                                
                               ],
 
          // crossAxisAlignment: CrossAxisAlignment.center,
@@ -228,6 +259,7 @@ backgroundColor: Colors.red[400],
     child: Icon(Icons.add),
     backgroundColor: Colors.red[400],
     ),
+    
     );
 
   }

@@ -2,15 +2,19 @@ import 'package:vendor_app/Screens/view_seats.dart';
 import 'package:vendor_app/models/movie.dart';
 import 'package:flutter/material.dart';
 import 'package:vendor_app/Screens/Home.dart';
+import 'package:firebase_storage/firebase_storage.dart';
+import 'package:vendor_app/services/store.dart';
 
 class MovieDetails extends StatefulWidget {
   static String id ='MovieDetails';
+  
 
   @override
   _FilmeDetailsState createState() => _FilmeDetailsState();
 }
 
 class _FilmeDetailsState extends State<MovieDetails> {
+  final _store = Store();
   @override
   Widget build(BuildContext context){
     Movie movie = ModalRoute.of(context).settings.arguments;
@@ -81,7 +85,7 @@ class _FilmeDetailsState extends State<MovieDetails> {
                                 Navigator.pushNamed(context, BuyTicket.id , arguments: movie);
                               }
 
-                          )
+                          ),
                         ],
                       ),
                     ),
