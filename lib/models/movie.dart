@@ -1,64 +1,64 @@
 class Movie
 {
+  String documentid;
   String mTitle;
   String mDescription;
   String mImage;
   String mTime;
-  String mNumberofseats;
-  bool c1 =false;
-  bool c2 =false;
-  bool c3 =false;
-  bool c4 =false;
-  bool c5 =false;
-  bool c6 =false;
-  bool c7 =false;
-  bool c8 =false;
-  bool c9 =false;
-  bool c10 =false;
-  bool c11 =false;
-  bool c12 =false;
-  bool c13 =false;
-  bool c14 =false;
-  bool c15 =false;
-  bool c16 =false;
-  bool c17 =false;
-  bool c18 =false;
-  bool c19 =false;
-  bool c20 =false;
-  bool c21 =false;
-  bool c22 =false;
-  bool c23 =false;
-  bool c24 =false;
-  bool c25 =false;
-  bool c26 =false;
-  bool c27 =false;
-  bool c28 =false;
-  bool c29 =false;
-  bool c30 =false;
-  bool c31 =false;
-  bool c32 =false;
-  bool c33 =false;
-  bool c34 =false;
-  bool c35 =false;
-  bool c36 =false;
-  bool c37 =false;
-  bool c38 =false;
-  bool c39 =false;
-  bool c40 =false;
-  bool c41 =false;
-  bool c42 =false;
-  bool c43 =false;
-  bool c44 =false;
-  bool c45 =false;
-  bool c46 =false;
-  bool c47 =false;
+  bool c1 ;
+  bool c2 ;
+  bool c3 ;
+  bool c4 ;
+  bool c5 ;
+  bool c6 ;
+  bool c7 ;
+  bool c8 ;
+  bool c9 ;
+  bool c10 ;
+  bool c11 ;
+  bool c12 ;
+  bool c13 ;
+  bool c14 ;
+  bool c15 ;
+  bool c16 ;
+  bool c17 ;
+  bool c18 ;
+  bool c19 ;
+  bool c20 ;
+  bool c21 ;
+  bool c22 ;
+  bool c23 ;
+  bool c24 ;
+  bool c25 ;
+  bool c26 ;
+  bool c27 ;
+  bool c28 ;
+  bool c29 ;
+  bool c30 ;
+  bool c31 ;
+  bool c32 ;
+  bool c33 ;
+  bool c34 ;
+  bool c35 ;
+  bool c36 ;
+  bool c37 ;
+  bool c38 ;
+  bool c39 ;
+  bool c40 ;
+  bool c41 ;
+  bool c42 ;
+  bool c43 ;
+  bool c44 ;
+  bool c45 ;
+  bool c46 ;
+  bool c47 ;
   
   Movie(
-    {this.mTitle,
-     this.mDescription,
-     this.mImage ,
+    { this.documentid,
+      this.mTitle,
+      this.mDescription,
+      this.mImage ,
       this.mTime ,
-      this.mNumberofseats,
       this.c1,
       this.c2,
       this.c3,
