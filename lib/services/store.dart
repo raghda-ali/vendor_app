@@ -64,4 +64,10 @@ class Store
     );
 
   }
+  Stream<QuerySnapshot> loadMovies (){
+      //List<Movie> movies = [];
+// await for( var snapshot in _firestore.collection('Movies').snapshots()){
+      return _firestore.collection('Movies').snapshots();
+
+  }
 }

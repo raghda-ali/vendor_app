@@ -10,6 +10,7 @@ class BuyTicket extends StatelessWidget {
   final GlobalKey<FormState> _globalkey = GlobalKey<FormState>();
   final _store = Store();
   static String id ='BuyTicket';
+
  // var title;
 
  // BuyTicket(this.title);
