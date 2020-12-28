@@ -64,4 +64,8 @@ class Store
     );
 
   }
+  updatemovies(data, documentID) {
+    _firestore.collection('Movies').document(documentID).updateData(
+        data);
+  }
 }

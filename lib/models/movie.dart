@@ -1,6 +1,6 @@
 class Movie
 {
-  String documentid;
+  String documentId;
   String mTitle;
   String mDescription;
   String mImage;
@@ -54,7 +54,7 @@ class Movie
   bool c47 ;
   
   Movie(
-    { this.documentid,
+    { this.documentId,
       this.mTitle,
       this.mDescription,
       this.mImage ,
