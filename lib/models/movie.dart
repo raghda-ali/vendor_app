@@ -5,6 +5,7 @@ class Movie
   String mDescription;
   String mImage;
   String mTime;
+  String mNumberofseats;
   bool c1 ;
   bool c2 ;
   bool c3 ;
@@ -59,6 +60,7 @@ class Movie
       this.mDescription,
       this.mImage ,
       this.mTime ,
+      this.mNumberofseats,
       this.c1,
       this.c2,
       this.c3,
